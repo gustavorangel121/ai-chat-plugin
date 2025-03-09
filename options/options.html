@@ -1,0 +1,40 @@
+<!-- options/options.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Chat Launcher Settings</h1>
+
+    <div class="chatbot-list">
+      <div class="chatbot-list-header">
+        <h2>Your AI Chatbots</h2>
+        <button id="add-chatbot">Add New</button>
+      </div>
+
+      <div id="chatbots-container">
+        <!-- Will be populated dynamically -->
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="save-button">Save</button>
+      <button id="reset-button">Reset to Default</button>
+    </div>
+
+    <div class="help">
+      <h3>URL Format</h3>
+      <p>Use {prompt} in the URL where your prompt should be inserted.</p>
+      <p>Examples:</p>
+      <ul>
+        <li>ChatGPT: https://chat.openai.com/?prompt={prompt}</li>
+        <li>Claude: https://claude.ai/chat?prompt={prompt}</li>
+      </ul>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

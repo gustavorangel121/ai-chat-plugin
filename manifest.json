@@ -1,0 +1,29 @@
+// manifest.json
+{
+  "manifest_version": 2,
+  "name": "AI Chat Launcher",
+  "version": "1.0",
+  "description": "Launch AI chat services with a pre-filled prompt",
+  "browser_action": {
+    "default_icon": "icons/icon48.png",
+    "default_title": "AI Chat Launcher",
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "browser_style": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ai-chat-launcher@example.com"
+    }
+  }
+}
